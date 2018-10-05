@@ -16,27 +16,45 @@
             h1
             {
                 color:rgb(19, 205, 252);
+                font-size:70px;
                 text-align:center;
             }
             p
             {
                 font-family:"Times New Roman";
-                font-size:20px;
+                font-size:30px;
             }
+            p.normal {font-style:normal;}
+            p.italic {font-style:italic;}
             </style>
 </head>
 
 <body>
     <h1>忘拿碗 厨房开发商</h1>
+    <hr>
 
-    <p><strong>神的丹尼尔</strong></p>
-    <p><img src="/Images/kangnaneil1.jpg" alt="My Images"/></p>
+    <p><b>神的丹尼尔</b></p>
+    <p><img src="/Images/kangnaneil1.jpg" alt="Kang Daniel" width="1000"/></p>
 
-    <video width="1920" height="1080" controls autoplay>
-        <source src="/Video/171113 Comeback舞台-姜丹尼尔.ogg" type="video/ogg">
-        <source src="/Video/171113 Comeback舞台-姜丹尼尔.mp4" type="video/mp4">
-        <object data="/Video/171113 Comeback舞台-姜丹尼尔.mp4" width="1920" height="1080">
-          <embed width="1920" height="1080" src="/Video/171113 Comeback舞台-姜丹尼尔.mp4">
-        </object>
+    <div style="text-align:center"> 
+            <button onclick="playPause()">播放/暂停</button> 
+            <br> 
+            <video id="video1" width="1000">
+              <source src="/Video/171113 Comeback舞台-姜丹尼尔.mp4" type="video/mp4">
+            </video>
+    </div>
+
+    <script> 
+    var myVideo=document.getElementById("video1"); 
+    function playPause()
+    {
+        if (myVideo.paused)
+            myVideo.play();
+        else 
+            myVideo.pause(); 
+    } 
+    </script> 
+            
+
 </body>
 </html>
