@@ -1,37 +1,6 @@
 # -*- coding: UTF-8 -*-
 #coding=utf-8
 
-import matplotlib.pyplot as plt
-import numpy as np
-
-def u(t,t0):
-    n=0
-    for i in t:
-        if(i<t0):
-           t[n]=0
-           n+=1
-        else:
-           t[n]=1
-           n+=1
-    return t
-x0=-1
-x1=np.pi
-ω=np.pi
-t0=1
-
-#x(t)
-x=np.linspace(x0,x1,100)
-a=np.linspace(x0,x1,100)
-y=np.sin(ω*x)*u(a,0)
-plt.subplot(1,2,1)
-plt.title("x(t)=sin(ωt)u(t)") 
-plt.plot(x,y)
-#h(t)
-z=np.linspace(x0,x1,100)
-y1=np.sin(z)
-plt.subplot(1,2,2)
-plt.title("h(t)=sin(t)") 
-plt.plot(z,y1)
 
 #时域的卷积=频域的乘积,所以用傅里叶变换快速实现卷积_fft
 
@@ -49,8 +18,38 @@ plt.plot(z,y1)
 #　　　‘same’　返回的数组长度为max(M, N),边际效应依旧存在。
 #　　　‘valid’ 　返回的数组长度为max(M,N)-min(M,N)+1,此时返回的是完全重叠的点。边缘的点无效。
 
-b=np.convolve(y,y1)
-plt.figure("卷积")
-plt.title("y(t)——Y(jw)；X(jw)*Y(jw)——x(t)·h(t)") 
-plt.plot(b)
+import matplotlib.pyplot as plt
+import numpy as np 
+
+#连续卷积试用
+
+def()
+#x(t)
+# linspace 第一个参数序列起始值, 第二个参数序列结束值,第三个参数为样本数默认50
+t = np.linspace(0, 3 * np.pi, 100)
+x = np.sin(t)
+
+plt.rcParams['font.sans-serif']=['SimHei'] #加上这一句就能在图表中显示中文
+plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
+plt.subplot(1,2,1)
+plt.title(r'$x(t)=sin(t)$') 
+plt.plot(t, x)
+#plt.show()
+
+#h(t)
+t1 = [z*0.375*np.pi for z in t]
+h = np.sin(t1)
+plt.subplot(1,2,2)
+# plt.title(u"测试2") #注意：在前面加一个u
+plt.title(r'$h(t)=sin(\omega t), \omega = \frac{3}{8} \pi$') 
+plt.plot(t1, h)
+plt.show()
+
+#y(t)
+
+y = np.convolve(x,h,'full') #卷积运算
+plt.subplot(2,1,1)
+plt.title(r'$y(t)=x(t)*h(t)$') 
+plt.plot(y)
+print(y)
 plt.show()
