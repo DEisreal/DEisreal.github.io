@@ -1,0 +1,5 @@
+import matplotlib
+matplotlib.matplotlib_fname()
+
+
+animation.convert_path: '"D:\RouseWeiser\ImageMagick-6.2.7-Q16\convert.exe "'
