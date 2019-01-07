@@ -12,10 +12,11 @@
 2、用动画模式说明卷积实现过程
 3、用多种方式说明卷积过程
 4、要么用PYTHON语言实现，设计对应GUI；要么用网页实现
-[题目要求原网址：]（https://github.com/kingsone995/kingsone995.github.io/blob/master/signal_lab/project.md）
+
+[题目要求原网址：来自王一刚老师网站](https://github.com/kingsone995/kingsone995.github.io/blob/master/signal_lab/project.md/)
 
 ## 三、科技报告
-[报告地址：]（https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/大作业报告_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/大作业报告_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群.docx）
+[报告地址（docx格式）](https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/大作业报告_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群)
 
 ## 四、代码
 ```
@@ -93,7 +94,7 @@ plt.show()
 ```
 
 ## 五、连续信号卷积图示
-![GIF动图](D:\RouseWeiser\github\DEisreal.github.io\VSS CODE\5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\连续信号卷积.gif) 
-![截图1](D:\RouseWeiser\github\DEisreal.github.io\VSS CODE\5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\截图- (1).png)
-![截图2](D:\RouseWeiser\github\DEisreal.github.io\VSS CODE\5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\截图- (2).png)
-![截图3](D:\RouseWeiser\github\DEisreal.github.io\VSS CODE\5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群\截图- (3).png)
+![**GIF动图**](https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/连续信号卷积.gif/) 
+![截图1](https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/截图-%20(1).png/)
+![截图2](https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/截图-%20(2).png/)
+![截图3](https://github.com/DEisreal/DEisreal.github.io/blob/master/VSS%20CODE/5_卷积实现过程_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/程序_3170406037_李易潼_3170406034_毛佳雁_3170406036_祝立群/截图-%20(3).png/)
