@@ -12,8 +12,8 @@ ax = plt.gca()
 #获取ax图例Convolution signal process
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus']=False
-ax.set(xlim=[-5, 5], ylim=[0, 2.5], title='卷积信号动画演示',
-       ylabel='Y-轴', xlabel='X-轴')
+ax.set(xlim=[-5, 5], ylim=[0, 2.5], title='Envolved signal animation presentation',
+       ylabel='Y-axis', xlabel='X-axis')
 #设置x轴y轴范围及标题
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')

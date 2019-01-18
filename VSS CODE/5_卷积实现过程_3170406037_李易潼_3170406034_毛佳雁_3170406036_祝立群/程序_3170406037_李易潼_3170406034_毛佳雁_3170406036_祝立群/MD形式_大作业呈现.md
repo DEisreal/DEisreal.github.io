@@ -34,8 +34,8 @@ ax = plt.gca()
 #获取ax图例Convolution signal process
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['axes.unicode_minus']=False
-ax.set(xlim=[-5, 5], ylim=[0, 2.5], title='卷积信号动画演示',
-       ylabel='Y-轴', xlabel='X-轴')
+ax.set(xlim=[-5, 5], ylim=[0, 2.5], title='Envolved signal animation presentation',
+       ylabel='Y-axis', xlabel='X-axis')
 #设置x轴y轴范围及标题
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
@@ -91,6 +91,7 @@ line, = ax.plot(x1, y3, "black")    #控制移动函数
 anim1=animation.FuncAnimation(fig, animate, init_func=init, frames=30, interval=1000, blit=True) 
 anim1.save('exxxo.gif', fps=2, writer='imagemagick')
 plt.show()
+
 ```
 
 ## 五、连续信号卷积图示
